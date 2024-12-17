@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPA - Plano Plurianual 1997-2001</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Plano Plurianual 1997-2001</h1>
+        <p>Município de Pacaraima</p>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="openSection('educacao')">Educação</a></li>
+                <li><a href="#" onclick="openSection('saude')">Saúde</a></li>
+                <li><a href="#" onclick="openSection('assistencia')">Assistência Social</a></li>
+                <li><a href="#" onclick="openSection('saneamento')">Saneamento Básico</a></li>
+                <li><a href="#" onclick="openSection('desenvolvimento')">Desenvolvimento Econômico</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo das Seções -->
+    <main>
+        <section id="educacao" class="section" style="display: block;">
+            <h2>Educação</h2>
+            <ul>
+                <li>Distribuição de merenda escolar: <span>300 kg/ano</span></li>
+                <li>Construção de biblioteca pública nas escolas</li>
+                <li>Promoção de bolsas de estudo: <span>20 bolsas/ano</span></li>
+                <li>Construção de mini teatro e escola agrícola</li>
+            </ul>
+        </section>
+
+        <section id="saude" class="section" style="display: none;">
+            <h2>Saúde</h2>
+            <ul>
+                <li>Aplicação de vacinas: <span>2.000 doses (1997-2001)</span></li>
+                <li>Construção de postos de saúde: <span>10 leitos</span></li>
+            </ul>
+        </section>
+
+        <section id="assistencia" class="section" style="display: none;">
+            <h2>Assistência Social</h2>
+            <ul>
+                <li>Atendimento a crianças carentes: <span>20 crianças/mês</span></li>
+                <li>Distribuição de cestas básicas: <span>10 cestas/mês</span></li>
+                <li>Fornecimento de medicamentos e cadeiras de rodas</li>
+            </ul>
+        </section>
+
+        <section id="saneamento" class="section" style="display: none;">
+            <h2>Saneamento Básico</h2>
+            <ul>
+                <li>Construção de rede de água potável: <span>6 km (1997-2001)</span></li>
+                <li>Construção de rede de esgoto: <span>2 km</span></li>
+            </ul>
+        </section>
+
+        <section id="desenvolvimento" class="section" style="display: none;">
+            <h2>Desenvolvimento Econômico</h2>
+            <ul>
+                <li>Criação de empregos: <span>100 empregos</span></li>
+                <li>Incentivo ao turismo local</li>
+                <li>Melhoria da infraestrutura urbana</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 - Prefeitura Municipal de Pacaraima</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function openSection(sectionId) {
+            // Esconde todas as seções
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.style.display = 'none');
+
+            // Exibe apenas a seção clicada
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
